@@ -1,0 +1,204 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgb(160, 146, 132);
+}
+main{
+    width:100%;
+    height: 100vh;
+    /*border:1px solid blue;*/
+    /*imagen de fondo*/
+    background-image: linear-gradient(rgba(5,7,12,0.4),rgba(5,7,12,0.4)),url(img/Fondocafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#contenedor{
+    width:80%;
+   /* border:1px solid red;*/
+    /*posicionando al centro de la web*/
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+h1,h2{
+    text-align: center;
+    /*border:1px solid green;*/
+    align-content: center;
+    margin:15px;
+}
+#contenedor h1{height: 50px;}
+#contenedor h2{height: 100px;}
+.menu{
+    height: 50px;
+    line-height: 50px;
+    /*border:1px solid violet*/
+}
+.menu ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a:hover{
+    opacity: 0.5;
+}
+.web li a{
+    text-decoration: none;
+    padding:10px;
+    color:white;
+}
+.redes li a{
+    padding:5px;
+    font-size: 1.5em;
+    color:white;
+}
+/*blog.html*/
+#container{
+    width:80%;
+    margin:auto;
+    /*border:1px solid blue;*/
+    text-align: justify;
+}
+#principal{
+    height: 1000px;
+}
+header{
+    height: 150px;
+    width:80%;
+    position:fixed;
+    top:0;
+    background-color: white;
+}
+section{
+    padding:10px;
+    margin:10px;
+    margin-top:150px;
+}
+article{
+    padding:10px;
+}
+#container .web li a{
+    color:black
+}
+#container .redes li a{
+    color:black;
+}
+#foto img{
+    width:80%;
+    display: block;
+    margin:auto;
+}
+figure{
+    width:50px;
+    float: right;
+    margin:10px
+}
+figure img{
+    width:100%;
+    border-radius: 50%;
+}
+#izq{
+    float:left;
+    width: 150px;
+    margin:px;
+}
+#fotoscafe{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoscafe img{
+    width: 380px;
+    margin: 25px;
+    box-shadow: 5px 5px 15px black;
+    transition: 0.5s;
+}
+#fotoscafe img:hover{
+    transform: scale(1.1);
+}
+table,th{
+    border: 2px solid black;
+    padding: 5px;
+}
+#contactos.img{
+    width: 29px;
+}
+#contenido{
+    display: flex;
+    padding: 30px;
+    gap: 350px;
+    justify-content: center;
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "titulo" "texto" "imagen";
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr;
+    gap: 30px;
+}
+.titulo{
+    grid-area: titulo;
+}
+.texto{
+    grid-area: texto;
+}
+.imagen{
+    grid-area: imagen;
+    grid-column: 2;
+    grid-row: 2;
+}
+.videos{
+    text-align: center;
+    gap: 30px;
+}
+.caja{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.promocion{
+    background-color: white;
+    border: 2px dotted gold;
+    padding: 20px;
+    width: 500px;
+    animation: agrandar 3s infinite;
+}
+.promocion h2{
+    background-color: white;
+}
+.promocion p{
+    background-color: white;
+}
+#BotonVentana{
+    background-color: white;
+}
+@keyframes agrandar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.col{
+    text-align: center;
+    gap: 30px;
+}
+.row img{
+    width: 500px;
+    border: 1px solid black;
+    padding: 5px;
+}
